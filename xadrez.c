@@ -2,7 +2,7 @@
 
 int main(){
 
-    int escolha, direcao, i;
+    int escolha, direcao, i, j;
 
 
     do{
@@ -10,6 +10,7 @@ int main(){
         printf("1-Torre\n");
         printf("2-Bispo\n");
         printf("3-Rainha\n");
+        printf("4-Cavalo\n");
         printf("0- Sair\n");
         scanf("%d", &escolha);
 
@@ -44,6 +45,16 @@ int main(){
                     printf("Esquerda\n");
                 }
                 break;
+            case 4:
+                printf("Movendo o cavalo...\n");
+                for (i = 1; i < 2; i++){
+                    for (j = 1; j < 3; j++){
+                        printf("Baixo\n");
+                    }
+                    printf("Esquerda\n");
+                }
+                break;
+
             case 0:
                 printf("Saindo...\n");
                 break;
